@@ -1,0 +1,47 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 40px;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.card-sm {
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid lightgrey;
+}
+
+.card-lg {
+  border-radius: 10px;
+}
+
+/* bu önemli sonra kullanılabilir */
+.fa-heart {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.card-image {
+  position: relative;
+}
+/* ****************************** */
+
+.nav-active {
+  height: 85px !important; /*neden bozuldu burası?? */
+  transition: 0.1s ease-in-out;
+  box-shadow: 2px 2px 3px rgba(100, 100, 111, 0.2),
+    -2px 2px 3px rgba(100, 100, 111, 0.2);
+}
