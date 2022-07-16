@@ -9,7 +9,7 @@ window.onscroll = () => {
   }
 };
 
-//*******************icon carousel***************************
+// icons carousel
 
 const carousel = document.querySelector(".carousel");
 const icons = document.querySelector(".place-icons");
@@ -47,37 +47,31 @@ next.addEventListener("click", () => {
 prev.addEventListener("click", () => {
   icons.scrollLeft -= icons.offsetWidth - 200;
 });
-
+new ResizeObserver(scrollCheck).observe(icons);
 scrollCheck();
 
-// *****search nav expand*****
+// search nav expand
 
 const searchNav = document.querySelector(".search-nav");
 const navBar = document.querySelector(".navbar");
 const x = document.querySelector(".x");
 const y = document.querySelector(".y");
-
-const largeSearch = document.querySelector(".large-search");
-const info = document.querySelector(".info");
 const largeInfo = document.querySelector(".expanded-info-where");
 const smallInfo = document.querySelector(".info-where");
-const rightNav = document.querySelector(".right-nav");
-const parentSearch = document.querySelector(".parent-search");
+const headerNav = document.querySelector(".header-nav");
+const main = document.querySelector(".main");
 
 searchNav.addEventListener("click", () => {
-  // if (navBar.classList.contains("expand")) {
-  // } else {
-  //   x.classList.add("shrink");
-  // }
   navBar.classList.add("expand");
   smallInfo.classList.add("remove");
   largeInfo.classList.add("add");
+  headerNav.classList.add("expand");
   x.classList.remove("shrink");
 });
-rightNav.addEventListener("click", () => {
+main.addEventListener("click", () => {
   navBar.classList.remove("expand");
   smallInfo.classList.remove("remove");
   largeInfo.classList.remove("add");
-
+  headerNav.classList.remove("expand");
   x.classList.add("shrink");
 });
