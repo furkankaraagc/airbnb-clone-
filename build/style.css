@@ -94,10 +94,8 @@ i {
 }
 .navbar .search-nav {
   padding: 6px 10px;
-  /* margin-left: 170px; */
   gap: 0;
   cursor: pointer;
-  margin-left: 170px;
 }
 .navbar .search-nav:hover {
   box-shadow: rgba(100, 100, 111, 0.35) 0px 5px 15px;
