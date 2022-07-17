@@ -214,7 +214,6 @@ i {
   height: 0;
   visibility: hidden;
   opacity: 0;
-  margin-left: 160px;
   transition: 0.2s ease-in-out;
 }
 .navbar.expand .expanded-info-top {
